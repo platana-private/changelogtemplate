@@ -4,15 +4,11 @@
   ### [{{title}}]({{href}})
 
   {{! List commits that add new features, but not those already listed above }}
-  {{#commit-list commits heading='### Features' message='feat: '}}
+  {{#commit-list commits heading='### Features' message='feature: '}}
     - {{subject}} [`{{shorthash}}`]({{href}})
   {{/commit-list}}
 
   {{#commit-list commits heading='### Fixes' message='fix: '}}
-      - {{subject}} [`{{shorthash}}`]({{href}})
-    {{/commit-list}}
-
-  {{#commit-list commits heading='### Bugs' message='bug: ' }}
       - {{subject}} [`{{shorthash}}`]({{href}})
     {{/commit-list}}
 
